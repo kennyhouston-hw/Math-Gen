@@ -44,7 +44,6 @@ function checkPreview() {
 function generateWidget(id, correctAnswer, successMessage, errorMessage, equation) {
     const displayEquation = equation.replace(/\?/g, '<span class="unknown-number">?</span>');
     
-    // Генерируем HTML с data-атрибутами
     const html = `<div class="widget-wrapper">
     <div class="math-widget" 
         data-math-widget="true"

@@ -46,21 +46,23 @@ function generateWidget(id, correctAnswer, successMessage, errorMessage, equatio
     
     // Генерируем HTML с data-атрибутами
     const html = `
-<div class="math-widget" 
-     data-math-widget="true"
-     data-correct-answer="${correctAnswer}"
-     data-success-message="${escapeHtml(successMessage)}"
-     data-error-message="${escapeHtml(errorMessage)}">
-    <div class="equation-wrapper">
-        <span class="caption">Решите пример:</span>
-        <span class="equation-text">${displayEquation}</span>
-    </div>
-    <div class="equation-check">
-        <input type="number" class="answer-input" step="any" placeholder="Ваш ответ">
-        <button class="check-btn">Проверить</button>
-    </div>
-    <div class="result-wrapper" style="display: none;">
-        <div class="message-wrapper"></div>
+<div class="widget-wrapper">
+    <div class="math-widget" 
+        data-math-widget="true"
+        data-correct-answer="${correctAnswer}"
+        data-success-message="${escapeHtml(successMessage)}"
+        data-error-message="${escapeHtml(errorMessage)}">
+        <div class="equation-wrapper">
+            <span class="caption">Решите пример:</span>
+            <span class="equation-text">${displayEquation}</span>
+        </div>
+        <div class="equation-check">
+            <input type="number" class="answer-input" step="any" placeholder="Ваш ответ">
+            <button class="check-btn">Проверить</button>
+        </div>
+        <div class="result-wrapper" style="display: none;">
+            <div class="message-wrapper"></div>
+        </div>
     </div>
 </div>`;
     

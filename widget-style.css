@@ -1,5 +1,10 @@
+.widget-wrapper {
+    margin: 8px auto;
+    width: 100%;
+    max-width: 760px;
+}
+
 .math-widget {
-    width: 100%; 
     padding: 24px; 
     background: #f8f8f8; 
     border-radius: 16px;     

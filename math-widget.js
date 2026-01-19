@@ -1,15 +1,11 @@
-// math-widget.js - Общий скрипт для всех математических виджетов
 document.addEventListener('DOMContentLoaded', function() {
-    // Находим все виджеты на странице
     const widgets = document.querySelectorAll('[data-math-widget]');
     
     widgets.forEach(function(widget) {
-        // Получаем параметры из data-атрибутов
         const correctAnswer = parseFloat(widget.dataset.correctAnswer);
         const successMessage = widget.dataset.successMessage || 'Верно! 🎉';
         const errorMessage = widget.dataset.errorMessage || 'Попробуйте еще раз!';
         
-        // Находим элементы внутри виджета
         const answerInput = widget.querySelector('.answer-input');
         const checkBtn = widget.querySelector('.check-btn');
         const resultDiv = widget.querySelector('.result-wrapper');
@@ -43,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
             resultDiv.style.display = 'flex';
         }
         
-        // Добавляем обработчики
         checkBtn.addEventListener('click', checkAnswer);
         
         answerInput.addEventListener('keypress', function(e) {

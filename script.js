@@ -77,7 +77,6 @@ function generateCode() {
     
     const widget = generateWidget(widgetId, correctAnswer, successMessage, errorMessage, equation);
     
-    // Генерируем полный код с инструкциями
     const fullCode = `${widget.html}`;
     
     document.getElementById('code').textContent = fullCode;
@@ -92,7 +91,6 @@ function createDemo(widget) {
     
     demoDiv.innerHTML = widget.html;
     
-    // Инициализируем демо-виджет
     const demoWidget = demoDiv.querySelector('[data-math-widget]');
     if (demoWidget) {
         const correctAnswer = parseFloat(document.getElementById('correctAnswer').value) || 0;
@@ -167,7 +165,8 @@ function escapeHtml(text) {
 function initGlobalCode() {
     const globalCodeElement = document.getElementById('global-code');
     if (globalCodeElement) {
-        globalCodeElement.textContent = `<script src="https://ваш-сайт.com/path/to/math-widget.js"><\/script>`;
+        globalCodeElement.textContent = `<script src="https://kennyhouston-hw.github.io/Math-Gen/math-widget.js"><\/script>
+        <link rel="stylesheet" href="https://kennyhouston-hw.github.io/Math-Gen/widget-style.css">`;
     }
 }
 

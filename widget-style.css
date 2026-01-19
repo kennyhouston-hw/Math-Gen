@@ -8,6 +8,9 @@
     gap: 12px;
     justify-content: center;
     align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .caption {

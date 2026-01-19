@@ -168,8 +168,8 @@ function initGlobalCode() {
     const globalCodeElement = document.getElementById('global-code');
     if (globalCodeElement) {
         globalCodeElement.textContent = `
-        <script src="https://kennyhouston-hw.github.io/Math-Gen/math-widget.js"><\/script>
-        <link rel="stylesheet" href="https://kennyhouston-hw.github.io/Math-Gen/widget-style.css">`;
+<script src="https://kennyhouston-hw.github.io/Math-Gen/math-widget.js"><\/script>
+<link rel="stylesheet" href="https://kennyhouston-hw.github.io/Math-Gen/widget-style.css">`;
     }
 }
 

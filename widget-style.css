@@ -1,6 +1,6 @@
 .math-widget {
-    max-width: 100%; 
-    padding: 25px; 
+    width: 100%; 
+    padding: 24px; 
     background: #f8f8f8; 
     border-radius: 16px;     
     display: flex;
@@ -11,6 +11,7 @@
     font-family: 'Manrope', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    margin: 16px auto;
 }
 
 .caption {

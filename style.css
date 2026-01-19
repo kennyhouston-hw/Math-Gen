@@ -1,0 +1,68 @@
+        body {
+            background: #f6f6f6;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Manrope', sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            color:#262626;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #4361ee, #3a0ca3);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            border: none;
+        }
+        
+        .card-header {
+            background: linear-gradient(90deg, #4361ee, #7209b7);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 1rem 1.5rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #4361ee, #7209b7);
+            border: none;
+        }
+        
+        .btn-success {
+            background: linear-gradient(90deg, #4cc9f0, #4361ee);
+            border: none;
+        }
+        
+        .question-mark {
+            color: #f72585;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            max-height: 400px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            border: 2px solid #333;
+        }
+        
+        .result-message {
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: 500;
+            text-align: center;
+        }
